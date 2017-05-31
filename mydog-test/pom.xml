@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>io.mycat</groupId>
 		<artifactId>mydog-parent</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>0.5</version>
 	</parent>
 	<artifactId>mydog-test</artifactId>
 
