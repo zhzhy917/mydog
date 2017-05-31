@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<generatorConfiguration> 
+  <classPathEntry location="D:/JAVA/apache-maven/repo/mysql/mysql-connector-java/5.1.37/mysql-connector-java-5.1.37.jar,E:/JAVA/mvn/repo/mysql/mysql-connector-java/5.1.37/mysql-connector-java-5.1.37.jar"/>  
+  <context id="my"> 
+    <commentGenerator> 
+      <property name="suppressDate" value="false"/>  
+      <property name="suppressComment" value="true"/> 
+    </commentGenerator>
+    
+    <properties>
+    	<property name="author" value="Mycat Mydog"/>
+    </properties>
+    
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionUrl="jdbc:mysql://127.0.0.1:3306/test" username="root" password="123456"/>  
+    <generators>
+      <generator type="model" tmplate="/templates/model1.tfl" targetPackage="com.hpgary.auto.model" root="com.hpgary.model.BaseModel"/>
+      <generator type="mappping" tmplate="/templates/mapping1.ftl"  targetPackage="com.hpgary.auto.mapping" root="com.hpgary.dao.BaseDaoMybatis"/>
+      <generator type="service" targetPackage="com.hpgary.auto.service" root="com.hpgary.service.BaseService"/>
+      <generator type="Mapper.xml" tmplate="/templates/mapperXml1.ftl" targetPackage="com.hpgary.auto.mapper" />
+    </generators>
+    <!--- 1、如果表id字段为主键自增曾配置：<generatedKey column="id" sqlStatement="JDBC"/> 
+			2、如果当表列出现大对象(如列blob)时请使用:<columnOverride column="blob" jdbcType="VARCHAR"/> -->  
+	<tables>
+	    <table tableName="users" domainObjectName="Users" name="系统用户管理"  />
+    </tables> 
+  </context> 
+</generatorConfiguration>

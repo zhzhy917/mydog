@@ -1,0 +1,25 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>io.mycat</groupId>
+		<artifactId>mydog-parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>mydog-test</artifactId>
+
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>io.mycat</groupId>
+				<version>0.0.1-SNAPSHOT</version>
+				<artifactId>mydog-core</artifactId>
+				<configuration>
+					<goalPrefix>mydog-core</goalPrefix>
+					<configXml>src/main/resources/generatorConfig.xml</configXml>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

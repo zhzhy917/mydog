@@ -1,0 +1,23 @@
+# maven #
+target
+
+# eclipse #
+.settings
+.project
+.classpath
+
+# windows #
+Thumbs.db
+
+# Mac #
+.DS_Store
+
+# Package Files #
+*.war
+*.ear
+
+# idea #
+*.iml
+.idea/
+overlays
+bin
