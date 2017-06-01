@@ -28,7 +28,7 @@
           写Mapper.xml 生成文件名为: model名Mapper.xml
      -->  
     <generators>
-      <generator type="model" tmplate="/templates/model1.tfl" targetPackage="com.hpgary.auto.model" root="com.hpgary.model.BaseModel"/>
+      <generator type="model" tmplate="/templates/model1.ftl" targetPackage="com.hpgary.auto.model" root="com.hpgary.model.BaseModel"/>
       <generator type="mappping" tmplate="/templates/mapping1.ftl"  targetPackage="com.hpgary.auto.mapping" root="com.hpgary.dao.BaseDaoMybatis"/>
       <generator type="service" targetPackage="com.hpgary.auto.service" root="com.hpgary.service.BaseService"/>
       <generator type="Mapper.xml" tmplate="/templates/mapperXml1.ftl" targetPackage="com.hpgary.auto.mapper" />
